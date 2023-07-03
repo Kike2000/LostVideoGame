@@ -1,0 +1,953 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{326C2F88-758D-4743-A8F8-974D2D3B01D7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LostSpace</RootNamespace>
+    <AssemblyName>LostSpace</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClaseDiseño.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClaseSonidos.cs" />
+    <Compile Include="ClaseVidasOvnis.cs" />
+    <Compile Include="ClaseMusica.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ganador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ganador.Designer.cs">
+      <DependentUpon>Ganador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Incorrecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Incorrecto.Designer.cs">
+      <DependentUpon>Incorrecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instruc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instruc.Designer.cs">
+      <DependentUpon>Instruc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instrucciones-LostInMaths.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instrucciones-LostInMaths.Designer.cs">
+      <DependentUpon>Instrucciones-LostInMaths.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instrucciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instrucciones.Designer.cs">
+      <DependentUpon>Instrucciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Juego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Juego.Designer.cs">
+      <DependentUpon>Juego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JuegoEducativo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JuegoEducativo.Designer.cs">
+      <DependentUpon>JuegoEducativo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClaseVidas.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ClaseCronometro.cs" />
+    <Compile Include="Prueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prueba.Designer.cs">
+      <DependentUpon>Prueba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClaseSuma.cs" />
+    <EmbeddedResource Include="ClaseDiseño.resx">
+      <DependentUpon>ClaseDiseño.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ganador.resx">
+      <DependentUpon>Ganador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Incorrecto.resx">
+      <DependentUpon>Incorrecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instruc.resx">
+      <DependentUpon>Instruc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instrucciones-LostInMaths.resx">
+      <DependentUpon>Instrucciones-LostInMaths.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instrucciones.resx">
+      <DependentUpon>Instrucciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Juego.resx">
+      <DependentUpon>Juego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JuegoEducativo.resx">
+      <DependentUpon>JuegoEducativo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Prueba.resx">
+      <DependentUpon>Prueba.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corriendo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cargando.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naves.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nnnn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llamas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estrella.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chips.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hhhhh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jjj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ships.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ships1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nnn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ggg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titulo1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titulo11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ggg1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo61.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cargando1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gif6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-316021816.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espacio3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sol.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Masrojiso.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astrorojo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gif2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-2363115.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-19484307.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corriendo1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-16686873.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-47141096.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-16645981.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-77711050.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-10241469.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-10404270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casco.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spsp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sww.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\denis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aqui.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aquirojo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mm1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instrucc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instrurojo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-8581032.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Peso.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\denis1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cometa22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CometaPurpura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CometaAzul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cometaGris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CometaNaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Suma1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SumaRes1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SumaRes2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SumaRes3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Suma11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resta1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resta11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resta111.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resta3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicSuma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicResta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicRestaRes1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicSumaRes2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicSumaRes1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicRestaRes2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portada2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoNuevo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicMultiRes2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicMultiRes1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicMulti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sky.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicFracRes1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicFracRes2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicFrac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicPar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicParRes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicSumaRes11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicImpar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicHoraRes3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Impar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impaar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicAngulos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angulo90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picangulo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicHora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horasres2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horares1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mercurio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-11064465.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-16062660.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-11069642.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-10657700.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-1009537.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ses.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ser.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ses1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ggs.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jj.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\es.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mercuri.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naves1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roberto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espacio2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espacio21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espacio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\we.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\we2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espacial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagentv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartoon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pep.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\we.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hope2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hope3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CometaRojo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corazon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corazon21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corazon++.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naves.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naes.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\otra2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aste1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aste3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aste2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laserpix2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rojo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cometa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cometa3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\come.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\come2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ovni.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ovni2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ovni4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nm2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nm2Rosa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nm2Morado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nm2Verde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planeta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixel21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astro2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RectanguloPregunta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seses.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-7109547.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-30335132.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seses1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eresw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ewew.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnSumaRes2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnSumaRes3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnSumaRes1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnRestaRes1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnRestaRes2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnRestaRes3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnMultiRes1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnMultiRes2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnMultiRes3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnParRes1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnParRes2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnParRes3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnImparRes3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnImparRes2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnImparRes31.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnImparRes1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlechaPiel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlechaVerde.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flechaMorada.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flechaRoja.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicAngRes1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicAngRes2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicAngRes3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pichora2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pichora3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pichora1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eree.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\division.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicDivi1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicDivi2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicDivi3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AreaTRi.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicArea1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicArea2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicArea3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Min.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Min2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Min3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Min4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Juan.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Juan1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Juan3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Juan2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perpe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recta.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PerRes.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Per2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Penta.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pen2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pen3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fracc.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fracc1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fracc2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decenas.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decenas1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decenas2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-13913475.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instrucciones1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touchpad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondoverde.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tecla.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mee.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-8061037.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-240311043.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instru.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roberto1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mal1.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
